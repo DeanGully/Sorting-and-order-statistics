@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/ymbongjathniel/Documents/GitHub/Sorting-and-order-statistics",
+      "program": "/Users/ymbongjathniel/Documents/GitHub/Sorting-and-order-statistics/build/Debug/outDebug"
+    }
+  ]
+}
