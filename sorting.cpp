@@ -2,6 +2,11 @@
 #include <vector>
 using namespace std;
 //Quick sort implementation
+int getMedian(vector<int>& arr){
+    int size = arr.size();
+    if(size%2==0) return (arr[(size/2)]+arr[(size+1)/2])/2;//FIX THIS LATER
+    else return arr[size/2];
+}
 int partitioning(vector<int>& arr, int startval, int endval) {
     int i = startval - 1; //starts index 0
     int pivot = arr[endval]; //pivot is last element
@@ -23,7 +28,7 @@ void quicksort( vector<int>& arr, int index1, int index2) {
 }
 int main() {
     vector<int> arr;
-    int n = 10; //size of array
+    int n = 4; //size of array
     for (int i = 0; i < n; i++) {
         arr.push_back(rand() % 100); //random numbers between 0 and 99
     }
@@ -38,5 +43,6 @@ int main() {
         cout << arr[i] << " ";
     }
     cout << endl;
+    cout << "\nMedian is: " << getMedian(arr);
     return 0;
 }
