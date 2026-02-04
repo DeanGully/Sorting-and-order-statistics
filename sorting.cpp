@@ -4,7 +4,7 @@ using namespace std;
 //Quick sort implementation
 int getMedian(vector<int>& arr){
     int size = arr.size();
-    if(size%2==0) return (arr[(size/2)]+arr[(size+1)/2])/2;//FIX THIS LATER
+    if(size%2==0) return (arr[(size/2)-1]+arr[(size/2)])/2;//minus 1 because array
     else return arr[size/2];
 }
 int partitioning(vector<int>& arr, int startval, int endval) {
